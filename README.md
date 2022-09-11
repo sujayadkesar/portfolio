@@ -2,4 +2,4 @@
 ### [Check-out!!](https://sujayadkesar.github.io/portfolio)
 
 ## License
-### [BSD License](LICENSE)
+### [BSD 3-Clause ](LICENSE)
