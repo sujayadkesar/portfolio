@@ -8,7 +8,7 @@ Welcome to the repository for my portfolio site! Here, you'll find the code and 
 - Easy navigation to different sections of the site 🧭
 - Integration with GitHub to display my latest projects 💻
 - Contact form for potential employers or collaborators to get in touch with me 📞
-- A section dedicated to my blog, where I write about my learnings and experiences 📝
+- A section dedicated to my blog, where I write about my learnings and CTF writups as well as Tryhackme & Hackthebox walkthrough📝
 
 ## Technologies Used
 - HTML 📄
