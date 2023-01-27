@@ -411,82 +411,80 @@
             </div>
         </div>
       </footer> -->
-                  
-                  
-<footer class="bg-light text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Facebook -->
-<!--       <a
-        class="btn text-white btn-floating m-1"
-        style="background-color: #3b5998;"
-        href="#!"
-        role="button"
-        ><i class="fab fa-facebook-f"></i
-      ></a> -->
-
-      <!-- Twitter -->
-      <a
-        class="btn text-white btn-floating m-1"
-        style="background-color: #55acee;"
-        href="https://twitter.com/SUJAY_ADKESAR"
-        role="button"
-        ><i class="fab fa-twitter"></i
-      ></a>
-
-      <!-- Google -->
-<!--       <a
-        class="btn text-white btn-floating m-1"
-        style="background-color: #dd4b39;"
-        href="#!"
-        role="button"
-        ><i class="fab fa-google"></i
-      ></a> -->
-
-      <!-- Instagram -->
-      <a
-        class="btn text-white btn-floating m-1"
-        style="background-color: #ac2bac;"
-        href="https://instagram.com/sujay_adkesar"
-        role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-      <!-- Linkedin -->
-      <a
-        class="btn text-white btn-floating m-1"
-        style="background-color: #0082ca;"
-        href="https://linkedin.com/in/sujay_adkesar"
-        role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <!-- Github -->
-      <a
-        class="btn text-white btn-floating m-1"
-        style="background-color: #333333;"
-        href="https://github.com/sujayadkesar"
-        role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">sujay_adkesar</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+<div class="icons">
+    <a href="#" class="icon icon--instagram">
+        <i class="fa fa-instagram"></i>
+    </a>
+    <a href="#" class="icon icon--twitter">
+        <i class="fa fa-twitter"></i>
+    </a>
+    <a href="#" class="icon icon--linkedin">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="#" class="icon icon--facebook">
+        <i class="fa fa-facebook"></i>
+    </a>
+</div>
                   
                   
 
 
 <style>
+    
+    
+    .icons{
+    background-color: #000;
+    display:flex;
+    column-gap:25px;
+}
+.icon{
+    width:50px;
+    height:50px;
+    display: inline-flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:22px;
+    color:#fff;
+    border-radius:50%;
+    outline:2px solid #fff;
+    transition-property : outline-offset , outline-color ,
+    background-color;
+    transition-duration: .25s;
+}
+.icon:hover{
+    outline-offset: 4px;
+}
+.icon:hover i{
+    animation: shake .25px;
+}
+.icon--instagram:hover{
+    background-image: radial-gradient(circle at 30% 107% ,
+    #fdf497 0%, #fdf497 5% , #fd5949 45%,
+    #d6249f 60%, #285AEB 90%);
+    outline-color:#a02d76;
+}
+.icon--twitter:hover{
+    background-color:#1da1f2;
+    outline-color: #1da1f2;
+}
+.icon--linkedin:hover{
+    background-color:#0077b5;
+    outline-color: #0077b5;
+}
+.icon--facebook:hover{
+    background-color:#301ce4;
+    outline-color: #0a06f3;
+}
+@keyframes shake{
+    10%{transform:rotate(-15deg);}
+    20%{transform:rotate(-15deg);}
+    30%{transform:rotate(-15deg);}
+    40%{transform:rotate(-15deg);}
+}
+    
+    
+    
   #myBtn {
     display: none;
     position: fixed;
