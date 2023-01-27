@@ -376,42 +376,7 @@
                   </div>
 </section>
 
-
-
-<!-- <footer id="footerpad">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-6 col-lg-8 mx-auto">
-              <ul class="list-inline text-center">
-                  <li class="list-inline-item"><a href="https://github.com/sujayadkesar"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
-                  <li class="list-inline-item"><a href="https://twitter.com/SUJAY_ADKESAR"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                  <li class="list-inline-item"><a href="https://instagram.com/sujay_adkesar"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
-                  <li class="list-inline-item"><a href="https://linkedin.com/in/sujay_adkesar"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
-              </ul>
-              <p class="copyright text-muted text-center">Web Design by SUJAY_ADKESAR</p>
-          </div>
-      </div>
-  </div>
-</footer> -->
-                  
-                  
-                  
-<!--                    <footer id="footerpad">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-8 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item"><a href="https://github.com/sujayadkesar"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="https://twitter.com/SUJAY_ADKESAR"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="https://instagram.com/sujay_adkesar"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="https://linkedin.com/in/sujay_adkesar"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
-                    </ul>
-                    <p class="copyright text-muted text-center">Web Design by SUJAY_ADKESAR</p>
-                </div>
-            </div>
-        </div>
-      </footer> -->
-<div class="icons">
+<!-- <div class="icons">
     <a href="https://instagram.com/sujay_adkesar" class="icon icon--instagram">
         <i class="fa fa-instagram"></i>
     </a>
@@ -425,69 +390,254 @@
         <i class="fa fa-github"></i>
     </a>
 </div>
+                   -->
                   
-                  
+<div class="container">
+    <div class="card">
+        <div class="content"><p>Local_host</p></div>
+        <div class="social">
+            <span><i class="fa fa-twitter"><a href="#"></a></i></span>
+            <span><i class="fa fa-instagram"></i></span>
+            <span><i class="fa fa-tryhackme"></i></span>
+            <span><i class="fa fa-mobile-phone"></i></span>
+            <span><i class="fa fa-credit-card"></i></span>
+            <span><i class="fa fa-linkedin"></i></span>
+            <span><i class="fa fa-github"></i></span>
+            <span><i class="fa fa-whatsapp"></i></span>
+        </div>
+    </div>
+</div>
+
 
 
 <style>
+
     
-    
-    .icons{
-    background-color: #000;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    min-height:100vh;
+    background-color:#eee;
     display:flex;
-    column-gap:25px;
-        justify-content: center;
-    align-items: center;
-     height:150px;
-}
-.icon{
-    width:50px;
-    height:50px;
-    display: inline-flex;
-    align-items:center;
     justify-content:center;
-    text-decoration:none;
-    font-size:22px;
-    color:#fff;
+    align-items:center;
+       
+}
+.card{
+    position:relative;
+       height:275px;
+    width:275px;
+}
+.card .content{
+   height:175px;
+    width:175px;
+    background-color:black;
     border-radius:50%;
-    outline:2px solid #fff;
-    transition-property : outline-offset , outline-color ,
-    background-color;
-    transition-duration: .25s;
+    position:relative;
+    font-family: 'Poppins', sans-serif;
+      z-index:10 !important;
+      cursor:pointer;
 }
-.icon:hover{
-    outline-offset: 4px;
+.card p{
+    color:#fff;
+   position:absolute;
+   top:65px;
+   left:36px;
+   font-size:30px;
+   letter-spacing:4px;
+   font-weight:900;
 }
-.icon:hover i{
-    animation: shake .25px;
+.card .social{
+    color:#000;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    background-color:#000 !important;
+   
+   transition:all 0.5s;
+   position:absolute;
+   top:3px;
 }
-.icon--instagram:hover{
-    background-image: radial-gradient(circle at 30% 107% ,
-    #fdf497 0%, #fdf497 5% , #fd5949 45%,
-    #d6249f 60%, #285AEB 90%);
-    outline-color:#a02d76;
+
+
+
+.card .social span:nth-child(1){
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-color:#cecece;
+    position:absolute;
+    top:60px;
+    left:65px;
+    font-size:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:all 0.5s;
 }
-.icon--twitter:hover{
-    background-color:#1da1f2;
-    outline-color: #1da1f2;
-}
-.icon--linkedin:hover{
-    background-color:#0077b5;
-    outline-color: #0077b5;
-}
-.icon--facebook:hover{
-    background-color:#301ce4;
-    outline-color: #0a06f3;
-}
-@keyframes shake{
-    10%{transform:rotate(-15deg);}
-    20%{transform:rotate(-15deg);}
-    30%{transform:rotate(-15deg);}
-    40%{transform:rotate(-15deg);}
-}
-     
+.card:hover .social span:nth-child(1){
+    position:absolute;
+    left:-70px;
     
-  #myBtn {
+}
+.card .social span:nth-child(2){
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-color:#cecece;
+    position:absolute;
+    top:60px;
+    left:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    transition:all 0.5s;
+     cursor:pointer;
+      transition-delay:0.7s;
+}
+.card:hover .social span:nth-child(2){
+    position:absolute;
+    top:190px;
+}
+.card .social span:nth-child(3){
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-color:#cecece;
+    position:absolute;
+    top:60px;
+    left:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    transition:all 0.5s;
+      cursor:pointer;
+       transition-delay:0.8s;
+}
+.card:hover .social span:nth-child(3){
+    position:absolute;
+    top:160px;
+    left:-40px;
+}
+.card .social span:nth-child(4){
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-color:#cecece;
+    position:absolute;
+    top:60px;
+    left:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    transition:all 0.5s;
+      cursor:pointer;
+      transition-delay:0.1s;
+}
+.card:hover .social span:nth-child(4){
+    position:absolute;
+    top:-20px;
+    left:-40px;
+}
+.card .social span:nth-child(5){
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-color:#cecece;
+    position:absolute;
+    top:60px;
+    left:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    transition:all 0.5s;
+      cursor:pointer;
+       transition-delay:0.2s;
+}
+.card:hover .social span:nth-child(5){
+    position:absolute;
+    top:-60px;
+    right:0px;
+}
+.card .social span:nth-child(6){
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-color:#cecece;
+    position:absolute;
+    top:60px;
+    left:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    transition:all 0.5s;
+      cursor:pointer;
+       transition-delay:0.6s;
+}
+.card:hover .social span:nth-child(6){
+    position:absolute;
+    top:165px;
+    left:165px;
+}
+.card .social span:nth-child(7){
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-color:#cecece;
+    position:absolute;
+    top:60px;
+    left:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    transition:all 0.5s;
+      cursor:pointer;
+       transition-delay:0.4s;
+}
+.card:hover .social span:nth-child(7){
+    position:absolute;
+    top:-25px;
+    left:165px;
+}
+.card .social span:nth-child(8){
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-color:#cecece;
+    position:absolute;
+    top:60px;
+    left:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    transition:all 0.5s;
+      cursor:pointer;
+       transition-delay:0.5s;
+}
+.card:hover .social span:nth-child(8){
+    position:absolute;
+    top:62px;
+    left:200px;
+}
+    
+    
+    
+    
+    
+    
+    
+    #myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
